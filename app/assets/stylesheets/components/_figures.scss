@@ -1,0 +1,17 @@
+
+.chart{
+  display: inline-block;
+  margin: 0 20px;
+  vertical-align: top;
+  position: relative;
+  width: 150px !important;
+  height: 150px !important;
+}
+
+canvas{
+  position: absolute;
+  left: 0 !important;
+  top: 0 !important;
+}
+
+

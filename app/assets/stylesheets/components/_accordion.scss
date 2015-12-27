@@ -1,0 +1,32 @@
+.accordion-heading {
+  border-top : 1px solid black;
+  // border-bottom: 1px solid black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  a {
+    color: black;
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+.accordion-inner {
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  p {
+    margin-bottom: 5px;
+  }
+}
+.hours-block {
+  padding-right: 2px;
+  padding-left: 2px;
+  margin-bottom: 5px;
+}
+
+// delete all underlines on focus for links
+a:focus {
+  text-decoration: none !important;
+}

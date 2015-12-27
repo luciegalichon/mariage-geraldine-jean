@@ -1,0 +1,29 @@
+.text {
+  &-white {
+    color: white;
+  }
+  &-black {
+    color: black;
+  }
+  &-red{
+    color: $red;
+  }
+  &-orange{
+    color: $orange;
+  }
+  &-blue{
+    color: $blue;
+  }
+  &-green{
+    color: $green;
+  }
+  &-grey{
+    color: $brand-color;
+  }
+}
+
+.no-underline {
+  &:hover {
+    text-decoration: none;
+  }
+}

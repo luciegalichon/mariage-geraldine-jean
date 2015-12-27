@@ -1,0 +1,66 @@
+// social links on top of facility page
+.social {
+  &-fixed {
+    position: fixed;
+    left: 50px;
+  }
+
+  &-pusher {
+    flex: 1 1 auto;
+  }
+
+  &-item {
+    flex: 0 1 auto;
+    color: black;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &-row {
+    hr {
+      height: 40px;
+      width: 1px;
+      background-color: $brand-color;
+      opacity: 0.3;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .hr-left {
+      margin-left: 0px;
+    }
+    .hr-right {
+      margin-right: 0px;
+    }
+  }
+}
+
+// social contact (tel and mail), below facility picture
+.contact-block {
+  border: 1px solid $brand-color;
+  margin: 10px 20px 10px 20px;
+  flex: 1 0 auto;
+  justify-content: center;
+  // min-width: 200px;
+
+  hr {
+    height: 20px;
+    width: 1px;
+    background-color: $brand-color;
+    opacity: 0.3;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  a {
+    color: black;
+    &:hover {
+      text-decoration: none;
+      color: $orange;
+    }
+  }
+}

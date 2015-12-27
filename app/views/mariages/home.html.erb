@@ -1,15 +1,44 @@
 <div class="banner text-center" style="background-image: url('<%= image_path "CHSD" %>')">
   <div class="banner-gradient"></div>
-  <div class="banner-content">
-    <h1>Géraldine & Jean</h1>
-    <ul>
-      <li class="chart" data-percent="75"><span>26</span>Jours</li>
-      <li class="chart" data-percent="15"><span>15</span>Heures</li>
-      <li class="chart" data-percent="83"><span>50</span>Minutes</li>
-    </ul>
+  <div class="bg-height-300 bg-white top1">
+    <div class="countdown">
+      <h1>Mariage Géraldine & Jean</h1>
+      <ul>
+        <li class="chart" data-percent="75"><span id="days"></span>Jours</li>
+        <li class="chart" data-percent="15"><span id="hours"></span>Heures</li>
+        <li class="chart" data-percent="83"><span  id="minutes"></span>Minutes</li>
+        <li class="chart" data-percent="83"><span id="secondes"></span>Secondes</li>
+      </ul>
+    </div>
   </div>
 </div>
 
-<div class="banner text-center" style="background-image: url('<%= image_path "index" %>')">
-  <div class="banner-gradient"></div>
-</div>
+
+
+
+
+<div id="getting-started"></div>
+
+<% content_for(:after_js) do %>
+  <%= javascript_tag do %>
+
+  $('#days').countdown('2016/06/04', function(event) {
+    $(this).html(event.strftime('%D'));
+  });
+
+  $('#hours').countdown('2016/06/04', function(event) {
+      $(this).html(event.strftime('%H'));
+  });
+
+  $('#minutes').countdown('2016/06/04', function(event) {
+    $(this).html(event.strftime('%M'));
+  });
+
+  $('#secondes').countdown('2016/06/04', function(event) {
+    $(this).html(event.strftime('%S'));
+  });
+
+  <% end %>
+<% end %>
+
+

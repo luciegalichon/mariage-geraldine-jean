@@ -1,0 +1,148 @@
+.actu-link {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  a {
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: black;
+    &:hover {
+      text-decoration: none;
+      color: $orange;
+    }
+    &:visited &:active {
+      text-decoration: none;
+    }
+  }
+  &-border {
+    a {
+      border: 1px solid $brand-color;
+    }
+  }
+}
+
+.plain-link {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+    background-color: $brand-color;
+    &:hover {
+      text-decoration: none;
+      background-color: white;
+      color: $brand-color;
+    }
+    &:visited &:active {
+      text-decoration: none;
+    }
+  }
+  &-border {
+    a {
+      border: 1px solid white;
+    }
+  }
+  &-orange {
+    a {
+      background-color: $orange !important;
+      &:hover {
+      text-decoration: none;
+      background-color: white !important;
+      color: $orange !important;
+      }
+    }
+  }
+  &-blue {
+    a {
+      background-color: $blue !important;
+      &:hover {
+        text-decoration: none;
+        background-color: white !important;
+        color: $blue !important;
+      }
+    }
+  }
+
+  &-green {
+    a {
+      background-color: $green !important;
+      &:hover {
+        text-decoration: none;
+        background-color: white !important;
+        color: $green;
+      }
+    }
+  }
+}
+
+.link {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  a {
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: $brand-color;
+    &:hover {
+      text-decoration: none;
+      background-color: $brand-color;
+      color: white;
+    }
+    &:visited &:active {
+      text-decoration: none;
+    }
+  }
+  &-border {
+    a {
+      border: 1px solid $brand-color;
+    }
+  }
+  &-orange {
+    a {
+      color: $orange !important;
+      border: 1px solid $orange !important;
+      &:hover {
+      text-decoration: none;
+      background-color: $orange !important;
+      color: white !important;
+      border: 1px solid $orange !important;
+      }
+    }
+  }
+  &-blue {
+    a {
+      color: $blue;
+      border: 1px solid $blue !important;
+      &:hover {
+        text-decoration: none;
+        background-color: $blue !important;
+        color: white !important;
+        border: 1px solid $blue !important;
+      }
+    }
+  }
+
+  &-green {
+
+    a {
+      color: $green !important;
+      border: 1px solid $green !important;
+      &:hover {
+        text-decoration: none;
+        background-color: $green !important;
+        color: white !important;
+        border: 1px solid $green !important;
+      }
+    }
+  }
+}

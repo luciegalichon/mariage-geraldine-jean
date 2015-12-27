@@ -1,0 +1,58 @@
+// Fonts
+body {
+  font-size: $base-size;
+  font-family: $base-font;
+}
+h1 {
+  font-size: $h1-size;
+  font-family: $bold-font;
+}
+h2 {
+  font-size: $h2-size;
+  font-family: $bold-font;
+}
+h3 {
+  font-size: $h3-size;
+  font-family: $bold-font;
+}
+h4 {
+  font-size: $h4-size;
+  font-family: $medium-font;
+}
+.max-size {
+  font-size: $max-size;
+  line-height: 1;
+  font-family: $bold-font;
+}
+.mini-size {
+  font-size: $mini-size;
+}
+
+.h1-size {
+  font-size: $h1-size;
+  font-family: $bold-font;
+  line-height: 1;
+}
+
+.h1-size-medium {
+  font-size: $h1-size;
+  font-family: $medium-font;
+  line-height: 1;
+}
+.h2-size {
+  font-size: $h2-size;
+  font-family: $bold-font;
+  line-height: 1;
+}
+
+.h3-size {
+  font-size: $h3-size;
+  font-family: $bold-font;
+  line-height: 1;
+}
+
+.h4-size {
+  font-size: $h4-size;
+  font-family: $base-font;
+  line-height: 1;
+}

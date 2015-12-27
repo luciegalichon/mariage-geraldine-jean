@@ -1,0 +1,21 @@
+.social-fixed-container {
+  position: fixed;
+  top: 180px;
+  left: 60px;
+  color: black;
+  list-style-type: none;
+}
+.social-fixed-item {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+
+  a {
+    color: black;
+    &:focus &:hover {
+      text-decoration: none;
+    }
+  }
+}

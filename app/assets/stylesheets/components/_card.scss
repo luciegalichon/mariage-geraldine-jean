@@ -1,0 +1,197 @@
+// Header card
+// .card {
+//   position: relative;
+// }
+
+// .card-bg {
+//   height: 300px;
+//   background-size: cover !important;
+//   background-position: center center;
+//   color: white;
+//   position: relative;
+// }
+// .card-text {
+//   position: absolute;
+//   bottom: 15px;
+//   left: 15px;
+//   // max-width: 450px;
+// }
+.card-category {
+  border-radius: 50%;
+  background-color: white;
+  padding: 10px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  z-index: 1;
+}
+.card-logo {
+  width: 25px;
+  border-radius: 50%;
+}
+
+.card-round {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.card-layout {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 1;
+}
+
+// Sub Cards
+.sub-card-row {
+  hr {
+    height: 350px;
+    width: 1px;
+    background-color: $brand-color;
+    opacity: 0.3;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+// .sub-card {
+//   position: relative;
+//   height: 350px;
+//   margin-top: 10px;
+//   margin-bottom: 10px;
+// }
+
+// Sub card for images
+// .sub-card-bg {
+//   // height: 250px;
+//   height: 100%;
+//   background-size: cover !important;
+//   background-position: center center;
+//   color: white;
+//   position: relative;
+//   justify-content: center;
+// }
+.sub-card-gradient {
+  background-size: cover !important;
+  background-color: black; //$brand-color;
+  opacity: 0.4;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 1;
+  &-blue {
+    background-color: $blue !important;
+  }
+}
+// .sub-card-link {
+//   background-size: cover !important;
+//   background-color: black; //$brand-color;
+//   opacity: 0;
+//   position: absolute;
+//   right: 0px;
+//   left: 0px;
+//   top: 0px;
+//   bottom: 0px;
+//   z-index: 3;
+// }
+
+.sub-card-text {
+  z-index: 2;
+  p {
+    font-size: 30px;
+  }
+}
+
+// sub card for map
+#card-hours {
+  hr {
+    height: 1px !important;
+    width: auto !important;
+    opacity: 1;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: none;
+  }
+}
+#picto-hours {
+  width: 30px;
+  z-index: 2;
+}
+
+
+// CSS for actus and events
+.post_image {
+  height: 150px;
+  background-size: cover !important;
+  background-position: center center;
+}
+#actus-carousel {
+  p {
+    font-size: $mini-size;
+  }
+  h3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  h4 {
+    font-size: $base-size;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+}
+
+// events
+.event-image {
+  height: 150px;
+  background-size: cover !important;
+  background-position: center center;
+  position: relative;
+}
+.event-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 3;
+}
+.event-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+  font-size: 18px;
+  padding-right: 7px;
+  padding-left: 7px;
+  border: 1px solid white;
+
+  &:hover {
+    background-color: white;
+    a {
+      color: black;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+.bg-event {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 2;
+}
+
+// more facilities
+.more-facilities {
+  height: 250px;
+  background-size: cover !important;
+  background-position: center center;
+  position: relative;
+}
