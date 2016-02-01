@@ -1,0 +1,20 @@
+<h1>Covoiturage</h1>
+
+<ul>
+  <% @covoiturages.each do |covoiturage| %>
+  <div>
+    <h2>covoiturage.title</h2>
+    <p>covoiturage.description</p>
+    <%= pluralize @restaurant.reviews.size, "review" %>
+    <div id="reviews">
+      <% if covoiturage.reviews.blank? %>
+        Be the first to leave a review for <%= covoiturage.title %>
+      <% else %>
+        <% covoiturage.reviews.each do |review| %>
+          <%= render 'reviews/show', review: review %>
+        <% end %>
+      <% end %>
+</div>
+</div>
+  <% end %>
+</ul>

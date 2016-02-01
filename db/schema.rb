@@ -11,10 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160125081543) do
+ActiveRecord::Schema.define(version: 20160201131851) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "covoiturages", force: :cascade do |t|
+    t.string   "title"
+    t.string   "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "lieus", force: :cascade do |t|
     t.string   "name"
@@ -27,4 +34,14 @@ ActiveRecord::Schema.define(version: 20160125081543) do
     t.float    "longitude"
   end
 
+  create_table "reviews", force: :cascade do |t|
+    t.string   "content"
+    t.integer  "covoiturage_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  add_index "reviews", ["covoiturage_id"], name: "index_reviews_on_covoiturage_id", using: :btree
+
+  add_foreign_key "reviews", "covoiturages"
 end
