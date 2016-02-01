@@ -2,3 +2,21 @@
  * SASS code SPECIFIC TO your home page
  * (margin/padding adjustments, background image, etc..)
  * ------------------------------------- */
+#box {
+  text-align: center; }
+
+.hex-icon {
+
+  &:hover {
+  }
+  & svg {
+  }
+}
+
+.hex-icon-heart path:first-of-type { fill: #7b5af7; }
+.hex-icon-heart path:last-of-type { fill: #fff; transform-origin: 21px 25px; -webkit-transform-origin: 21px 25px;
+  animation: hex-icon-heart-beat 1s linear infinite;
+  -webkit-animation: hex-icon-heart-beat 1s linear infinite;
+}
+@keyframes hex-icon-heart-beat { 0% { transform: scale3d(1, 1, 1); } 30% { transform: scale3d(0.75, 0.75, 1); } 60% { transform: scale3d(1, 1, 1); } }
+@-webkit-keyframes hex-icon-heart-beat { 0% { -webkit-transform: scale3d(1, 1, 1); } 30% { -webkit-transform: scale3d(0.75, 0.75, 1); } 60% { -webkit-transform: scale3d(1, 1, 1); } }

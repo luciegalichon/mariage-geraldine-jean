@@ -1,39 +1,60 @@
-<!-- <nav class="navbar-wagon">
-  <div class="container navbar-wagon-container">
+<nav class="navbar-wagon">
+  <div class="container navbar-wagon-container navbar-wagon-fixed navbar-wagon-height">
 
     <a href="/">
-      <img src="" class="navbar-wagon-logo">
+      <%= image_tag 'tampon-rose.png', class: "navbar-wagon-logo" %>
     </a>
 
     <div class="navbar-wagon-pusher"></div>
 
-    <form action="" class="navbar-wagon-search hidden-xs hidden-sm">
-      <input type="text" class="navbar-wagon-search-input" placeholder="Search something">
-      <button type="submit" class="navbar-wagon-search-btn">
-        <i class="fa fa-search"></i>
-      </button>
-    </form>
     <hr class="hidden-xs hidden-sm">
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Contact</a>
-    <hr>
-    <a href="" class="navbar-wagon-item navbar-wagon-link">
-      <div class="icon-badge-container">
-        <i class="fa fa-envelope-o"></i>
-        <div class="icon-badge icon-badge-blue">3</div>
-      </div>
-    </a>
-    <hr>
-    <div class="navbar-wagon-item">
+    <a href="" class="navbar-wagon-item navbar-wagon-link">Géraldine et Jean</a>
+    <hr class="hidden-xs hidden-sm">
+    <a href="<%=lieus_path%> " class="navbar-wagon-item navbar-wagon-link">Lieux du mariage</a>
+    <hr class="hidden-xs hidden-sm">
+    <a href="" class="navbar-wagon-item navbar-wagon-link">Où se loger</a>
+    <hr class="hidden-xs hidden-sm">
+    <a href="" class="navbar-wagon-item navbar-wagon-link">Comment venir ?</a>
+    <!-- <div class="navbar-wagon-item">
       <div class="dropdown">
-        <img src="http://placehold.it/50x50" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown"> <p>Comment venir ?</p></a>
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Log Out</a></li>
+          <li><a href="#">Covoiturage</a></li>
+          <li><a href="#">Autre</a></li>
         </ul>
       </div>
-    </div>
+    </div> -->
+    <hr class="hidden-xs hidden-sm">
+    <a href="" class="navbar-wagon-item navbar-wagon-link">RSVP</a>
     <hr>
-    <a href="" class="navbar-wagon-item navbar-wagon-button btn">Post stuff</a>
+
   </div>
-</nav> -->
+</nav>
+
+<% content_for(:after_js) do %>
+  <%= javascript_tag do %>
+
+      $(window).on("scroll", function(e) {
+
+        if ($(window).width() > 768) {
+          console.log($(window).width())
+
+          if ($(window).scrollTop() >= 200 ) {
+            $('.navbar-wagon-height').css("height", 70)
+            $('.navbar-wagon-logo').css("height", 50)
+            $('.navbar-wagon-logo').css("width", 50)
+             console.log("yo")
+          };
+
+          if ($(window).scrollTop() < 200 ) {
+            $('.navbar-wagon-height').css("height", 180)
+            $('.navbar-wagon-logo').css("height", 150)
+            $('.navbar-wagon-logo').css("width", 150)
+             console.log("yo")
+          };
+
+        };
+       });
+
+  <% end %>
+<% end %>

@@ -9,8 +9,12 @@
   </head>
   <body>
     <%= render "layouts/navbar" %>
+    <div class="margin-top-180">
     <%= yield %>
+    </div>
     <%= javascript_include_tag 'application' %>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyANe92i44kVh91fplb7L6Gis08MJdDla1E"></script>
+    <script src='//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js' type='text/javascript'></script>
     <%= yield :after_js %>
   </body>
 </html>

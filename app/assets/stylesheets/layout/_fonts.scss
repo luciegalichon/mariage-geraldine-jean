@@ -5,49 +5,49 @@ body {
 }
 h1 {
   font-size: $h1-size;
-  font-family: $bold-font;
+  font-family: $header-font;
+  color: $green !important;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
 }
 h2 {
   font-size: $h2-size;
-  font-family: $bold-font;
+  font-family: $header-font;;
+  color: $pink;
 }
 h3 {
   font-size: $h3-size;
-  font-family: $bold-font;
+  font-family: $header-font;;
 }
 h4 {
   font-size: $h4-size;
-  font-family: $medium-font;
+  font-family: $base-font;
 }
-.max-size {
-  font-size: $max-size;
-  line-height: 1;
-  font-family: $bold-font;
-}
-.mini-size {
-  font-size: $mini-size;
+
+h5 {
+  font-size: 10px;
+  font-family: $base-font;
 }
 
 .h1-size {
   font-size: $h1-size;
-  font-family: $bold-font;
+  font-family: $header-font;
   line-height: 1;
 }
 
 .h1-size-medium {
   font-size: $h1-size;
-  font-family: $medium-font;
+  font-family: $header-font;
   line-height: 1;
 }
 .h2-size {
   font-size: $h2-size;
-  font-family: $bold-font;
+  font-family: $header-font;
   line-height: 1;
 }
 
 .h3-size {
   font-size: $h3-size;
-  font-family: $bold-font;
+  font-family: $header-font;
   line-height: 1;
 }
 
@@ -55,4 +55,11 @@ h4 {
   font-size: $h4-size;
   font-family: $base-font;
   line-height: 1;
+}
+
+.font-green {
+  color: $green!important;
+}
+.font-pink {
+  color: $pink!important;
 }

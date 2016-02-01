@@ -1,23 +1,315 @@
-<div class="banner text-center" style="background-image: url('<%= image_path "CHSD" %>')">
-  <div class="banner-gradient"></div>
-  <div class="bg-height-300 padding-top-30 padding-bottom-30 bg-white top1">
-    <div class="countdown">
-      <h1>Mariage Géraldine & Jean</h1>
-      <ul style="list-inlined">
-        <li class="chart" data-percent="75"><span id="days"></span>Jours</li>
-        <li class="chart" data-percent="15"><span id="hours"></span>Heures</li>
-        <li class="chart" data-percent="83"><span  id="minutes"></span>Minutes</li>
-        <li class="chart" data-percent="83"><span id="secondes"></span>Secondes</li>
-      </ul>
+
+<div class="bg-fond">
+
+  <div class="container max-width">
+
+    <div class="row">
+
+      <div class="col-xs-12">
+
+        <div class="top1">
+          <div class="countdown banner-content border-total text-center">
+            <div class="banner-heart-1"><i class="fa fa-heart fa-2x"></i></div>
+            <div class="banner-heart-2"><i class="fa fa-heart fa-2x"></i></div>
+            <div class="banner-heart-3"><i class="fa fa-heart fa-2x"></i></div>
+            <div class="banner-heart-4"><i class="fa fa-heart fa-2x"></i></div>
+            <h1>Mariage de Géraldine & Jean</h1>
+            <ul style="list-inlined">
+              <li class="chart"><span id="days"></span>Jours</li>
+              <li class="chart"><span id="hours"></span>Heures</li>
+              <li class="chart"><span  id="minutes"></span>Minutes</li>
+              <li class="chart"><span id="secondes"></span>Secondes</li>
+               <!-- data-percent="100" -->
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+</div>
+
+<div class="bg-pink">
+
+  <div class="container max-width bg-pink">
+
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="padding-top-20 padding-bottom-20">
+          <h1 class="text-center font-green"> Starring </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-md-5">
+        <div class=" bg-height-400 text-center">
+          <div class="bg-height-250">
+            <div class="avatar avatar-bordered">
+              <div class="avatar-background" style="background-image: url(<%= image_path 'gege.jpg' %>)"></div>
+            </div>
+          </div>
+          <div class="padding-top-20 padding-bottom-20">
+            <h3> Géraldine Lapiche </h3>
+            <p> Une fille extraordinaire </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-2 text-center">
+        <span class="hex-icon-heart">
+          <svg style="height:70px; width:70px;">
+            <path d="M0,19 C0,44 35,50.875 35,59 L35,19 C35,-6 0,-6 0,19 L0,19 Z M35,19 L35,59 C35,50.875 70,44 70,19 C70,-6 35,-6 35,19 L35,19 Z" id="Shape"></path>
+          </svg>
+        </span>
+      </div>
+       <!--  <i class="fa fa-heart fa-4x"></i> -->
+      <div class="col-xs-12 col-md-5">
+        <div class=" bg-height-400 text-center">
+          <div class="bg-height-250">
+            <div class="avatar avatar-bordered">
+              <div class="avatar-background" style="background-image: url(<%= image_path 'jean.png' %>)"></div>
+            </div>
+          </div>
+          <div class="padding-top-20 padding-bottom-20">
+            <h3> Jean Sénémaud </h3>
+            <p> Une homme formidable </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="banner-transition text-center" style="background-image: url('<%= image_path "fond2" %>')">
+</div>
+
+<div class="container  max-width">
+
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="padding-top-20 padding-bottom-20">
+        <h1 class="text-center font-pink"> Le programme </h1>
+      </div>
+    </div>
+<!--     <div class="col-xs-12 col-md-6">
+      <p> On les aime </p>
+    </div> -->
+  </div>
+
+    <div class="row">
+    <div class="col-xs-12 col-md-3">
+      <div class=" bg-height-400 text-center">
+        <div class="bg-height-250">
+          <div class="avatar avatar-bordered">
+            <div class="avatar-background" style="background-image: url(<%= image_path 'mairie.JPG' %>)"></div>
+          </div>
+        </div>
+        <h3> 11h </h3>
+        <p> La mairie </p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <div class="bg-height-400 text-center">
+        <div class="bg-height-250">
+          <div class="avatar avatar-bordered">
+            <div class="avatar-background" style="background-image: url(<%= image_path 'eglise' %>)"></div>
+          </div>
+        </div>
+        <h3> 16h </h3>
+        <p> La cérémonie en l'église de Cheilly les Maranges </p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <div class="bg-height-400 text-center">
+        <div class="bg-height-250">
+          <div class="avatar avatar-bordered">
+            <div class="avatar-background" style="background-image: url(<%= image_path 'chassagne.JPG' %>)"></div>
+          </div>
+        </div>
+        <h3> 18h </h3>
+        <p> Le Vin d'honneur au Domaine du chateau de Chassagne Montrachet </p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <div class="bg-height-400 text-center">
+        <div class="bg-height-250">
+          <div class="avatar avatar-bordered">
+            <div class="avatar-background" style="background-image: url(<%= image_path 'chassagne2.JPG' %>)"></div>
+          </div>
+        </div>
+        <h3> 20h </h3>
+        <p> Le diner au Domaine du chateau de Chassagne Montrachet  </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="banner-transition text-center" style="background-image: url('<%= image_path "fond2" %>')">
+</div>
+
+<div class="bg-height-400-center">
+  <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://app.mailjet.com/widget/iframe/1Ab6/rv" width="600" height="383"></iframe>
+</div>
+
+<div class="banner-transition text-center" style="background-image: url('<%= image_path "fond2" %>')">
+</div>
+
+<div class="bg-pink">
+<div class="container  max-width">
+
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="padding-top-20 padding-bottom-20">
+        <h1 class="text-center font-pink"> Les témoins </h1>
+      </div>
+    </div>
+<!--     <div class="col-xs-12 col-md-6">
+      <p> On les aime </p>
+    </div> -->
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-3">
+      <div class="bg-height-100p text-center">
+        <div class="bg-height-250 bg-white avatar avatar-bordered">
+          <h3> Les témoins de la mariée </h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <div class="bg-height-100p text-justify">
+        <div class="bg-height-250">
+          <div class="avatar avatar-bordered">
+            <div class="avatar-background" style="background-image: url(<%= image_path 'emeline' %>)"></div>
+          </div>
+        </div>
+        <h3> Emeline </h3>
+        <h4> <strong>Age :</strong> 28 ans</h4>
+        <h4> <strong>Caractère :</strong> On la surnomme Meuh ou La Fouine depuis plus de 13 ans maintenant. Cette reine du royaume animal sera toujours là pour vous écouter et partager de riches moments (bitcher sur les gens du lycée, aller voir des comédies musicales ou les Enfoirés, se goinfrer de sushis…)</h4>
+        <h4> <strong>Amies depuis :</strong> la seconde, septembre 2002</h4>
+        <h4> <strong>Hobbies :</strong> Donner des leçons de notariat, se mettre
+         à la photo, écouter aux portes</h4>
+        <h4> <strong>Contact :</strong></h4>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <div class="bg-height-100p text-justify">
+        <div class="bg-height-250">
+          <div class="avatar avatar-bordered">
+            <div class="avatar-background" style="background-image: url(<%= image_path 'charles' %>)"></div>
+          </div>
+        </div>
+        <h3> Charles </h3>
+        <h4> <strong> Age :</strong> 29 ans</h4>
+        <h4> <strong>Caractère :</strong> Certains disent qu’il est compulsif, exubérant, hyperactif, d’autres diront énergique voire fatigant. Rares sont ceux qui le décriraient comme calme ou reposé, mais détrompez-vous, il suffit d’une grand thé chaud et d’un tête à tête et Charles sait se faire à l’écoute et doux comme un agneau.</h4>
+        <h4> <strong>Amis depuis :</strong> le WEI – septembre 2007</h4>
+        <h4> <strong>Hobbies :</strong> l’electro, l’electro, l’electro et les jeux vidéos</h4>
+        <h4> <strong>Contact :</strong></h4>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <div class="bg-height-100p text-justify">
+        <div class="bg-height-250">
+          <div class="avatar avatar-bordered">
+            <div class="avatar-background" style="background-image: url(<%= image_path 'arthur' %>)"></div>
+          </div>
+        </div>
+        <h3> Arthur </h3>
+        <h4> <strong> Age :</strong> 29 ans</h4>
+        <h4> <strong>Caractère :</strong> Grand sentimental derrière ses lunette de hipster, ses tshirts de hipster, ses cheveux crépus de hipster (ah non là ce sont d’autres origines), Tutur comme on l’appelle adore manger, jouer, boire, faire la fête, danser, et pincer la bouche en cul de poule. Racontez-lui toujours les blagues deux fois, c’est rare qu’il comprenne la première….</h4>
+        <h4> <strong>Amis depuis :</strong> un séminaire en Laponie – 2012.</h4>
+        <h4> <strong>Hobbies :</strong> le Hipsterisme</h4>
+        <h4> <strong>Contact :</strong></h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-3">
+      <div class="bg-height-100p text-justify">
+        <div class="bg-height-250 bg-white avatar avatar-bordered">
+          <h3> Les témoins du marié </h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <div class="bg-height-100p text-justify">
+        <div class="bg-height-250">
+          <div class="avatar avatar-bordered">
+            <div class="avatar-background" style="background-image: url(<%= image_path 'nicolas' %>)"></div>
+          </div>
+        </div>
+        <h3> Nicolas Sénémaud </h3>
+        <h4> <strong> Age :</strong> 27 ans</h4>
+        <h4> <strong>Caractère :</strong> Courageux, fonceur, une vraie force de la nature. Prédestiné aux taches
+        physiques et à servir de bouncer avec le type relou qui drague ta meuf.</h4>
+        <h4> <strong>Amis depuis :</strong> 3 septembre 1988 (ya habourné toi yiyiyiyi !)</h4>
+        <h4> <strong>Hobbies :</strong> Taekwondo, voyages et faire la cuisine.</h4>
+        <h4> <strong>Contact :</strong>0652688298</h4>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <div class="bg-height-100p text-justify">
+         <div class="bg-height-250">
+          <div class="avatar avatar-bordered">
+            <div class="avatar-background" style="background-image: url(<%= image_path 'marina' %>)"></div>
+          </div>
+        </div>
+        <h3> Marina </h3>
+        <h4> <strong> Age :</strong> 28 ans</h4>
+        <h4> <strong>Caractère :</strong> Son excessive intelligence n’a d’égale que sa moquerie, bienveillante. De bon conseil, à l’écoute, elle est toujours là quand il faut. Une meilleure pote quoi.</h4>
+        <h4> <strong>Amis depuis :</strong> 2005 (wouputain)</h4>
+        <h4> <strong>Hobbies :</strong> Yoga, les voyages, se moquer de Jean. Et sauver les gens mais ca c’est parce qu’il faut bien vivre ma ptite dame.</h4>
+        <h4> <strong>Contact :</strong>0661214126</h4>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <div class="bg-height-100p text-justify">
+         <div class="bg-height-250">
+          <div class="avatar avatar-bordered">
+            <div class="avatar-background" style="background-image: url(<%= image_path 'paul' %>)"></div>
+          </div>
+        </div>
+        <h3> Paul </h3>
+        <h4> <strong>Age :</strong> 28 ans </h4>
+        <h4><strong> Caractère :</strong> Brillant, vif, drole... Sa nonchalance de surface n’a d’égale que sa faculté à trouver le mot juste.</h4>
+        <h4><strong>Amis depuis :</strong> hier</h4>
+        <h4><strong>Hobbies :</strong> Le bon vin, le PSG, le rugby et cette bonne vieille porte de St Ouen.
+        <h4><strong>Contact :</strong> 0607379347</h4>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+<div class="banner-transition text-center" style="background-image: url('<%= image_path "fond2" %>')">
+</div>
+
+<div class='container max-width'>
+  <div class="row">
+    <div class= "col-xs-12">
+      <h3 class = "text-center"> Quelques photos en attendant celles du mariage ! </h3>
+    </div>
+  </div>
+
+
+<div class="banner-photo margin-bottom-30">
+  <h1 class="top-4"> Clic me !</h1>
+  <span class="banner-bg" style="background-image: url(<%= image_path @photos.first %>); background-position: center center;"></span>
+  <span class="banner-gradient"></span>
+  <a href=<%= image_path @photos.first %> class='banner-link' data-lightbox="roadtrip"></a>
+  <% @photos.drop(1).each do |photo| %>
+    <a href=<%= image_path photo %> data-lightbox="roadtrip"></a>
+  <% end %>
+</div>
+
 </div>
 
 
 
 
 
-<div id="getting-started"></div>
 
 <% content_for(:after_js) do %>
   <%= javascript_tag do %>
@@ -38,6 +330,15 @@
     $(this).html(event.strftime('%S'));
   });
 
+  <% end %>
+
+  <%= javascript_tag do %>
+
+    $(function animateHeart() {
+      $('.heart span').animate({
+          fontSize: $('.heart span').css('fontSize') == '75px' ? '50px' : '75px'
+      }, 500, animateHeart);
+    });
   <% end %>
 <% end %>
 

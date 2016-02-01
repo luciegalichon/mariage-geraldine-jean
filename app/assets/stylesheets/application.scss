@@ -13,3 +13,19 @@
 @import "components/index";
 @import "pages/index";
 @import "vendor/index";
+
+//for the lightbox
+@import "lightbox/lightbox.scss";
+
+@media (max-width: $screen-sm){
+  body {
+    padding-top: 60px;
+  }
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 1px;
+  font-weight: 400;
+}

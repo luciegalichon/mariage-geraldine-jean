@@ -21,17 +21,28 @@ $header-font: 'Petit Formal Script', cursive;
 $base-size: 16px;
 $mini-size: 12px;
 $base-height: 1.4;
+$h1-size: 30px;
+$h2-size: 25px;
+$h3-size: 20px;
+$h4-size: 16px;
+
 
 /* -------------------------------------
  * Colors
  * ------------------------------------- */
 // Scheme
-$brand-color: #97EECB;
+$brand-color: #49E9CD;
 $red: #EE5F5B;
 $blue: #469AE0;
 $yellow: #FDB631;
 $orange: #E67E22;
-$green: #32B796;
+$green: #49E9CD;
+$pink: #ffe9c4;
+
+// $pink:#F9CDDA;
+// $pink:#FF9899;
+
+
 
 // Gray scale
 $gray-darker:  lighten(#000, 13.5%); // #222

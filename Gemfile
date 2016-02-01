@@ -13,6 +13,11 @@ gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
+gem "coffee-rails"
+
+# Gems pour les cartes
+gem "geocoder"
+gem "gmaps4rails"
 
 group :development, :test do
   gem 'binding_of_caller'
@@ -26,4 +31,11 @@ end
 group :production do
   gem 'rails_12factor'
   gem 'puma'
+end
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-slick.js'
+  gem 'rails-assets-lightbox'
+  # for Gmaps4rails
+  gem "rails-assets-underscore"
 end

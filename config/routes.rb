@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
   root to: 'mariages#home'
 
-  get 'mariages/about' => 'mariages#about'
 
-  get 'mariages/contact' => 'mariages#contact'
+  resources :lieus, only: [:index, :show, :new, :create, :edit, :update]
 
-  get 'mariages/lieux' => 'mariages#lieux'
+  resources :covoiturages, only: [:index, :new, :create, :show, :edit, :update] do
+    resources :commentaires, only: [:index, :new, :create, :show, :edit, :update, :destroy]
+  end
 
 
   # The priority is based upon order of creation: first created -> highest priority.

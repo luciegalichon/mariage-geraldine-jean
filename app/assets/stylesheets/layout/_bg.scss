@@ -1,4 +1,13 @@
 // bg size and position
+.bg-fond {
+  // height: 1page;
+  background-size: cover !important;
+  background-position: center center;
+  position: relative;
+  background: image_url('fond3.png');
+}
+
+
 .bg-height-800 {
   height: 800px;
   background-size: cover !important;
@@ -15,7 +24,19 @@
   height: 400px;
   background-size: cover !important;
   background-position: center center;
-  position: relative;
+   position: relative;
+
+}
+
+.bg-height-400-center {
+  height: 400px;
+  background-size: cover !important;
+  background-position: center center;
+   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 .bg-height-350 {
   height: 350px;
@@ -34,6 +55,9 @@
   background-size: cover !important;
   background-position: center center;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bg-height-240 {
@@ -143,6 +167,10 @@
   }
   &-white {
     background: white;
+    z-index: 0;
+  }
+  &-pink {
+    background: $pink;
     z-index: 0;
   }
 }
