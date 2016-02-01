@@ -4,10 +4,17 @@ def create
     @covoiturage = Covoiturage.find(params[:covoiturage_id])
     @review = Review.new(review_params)
     @review.covoiturage = @covoiturage
+    @id=@covoiturage.id-1
     if @review.save
-      redirect_to covoiturage_path(@covoiturage)
+      respond_to do |format|
+        format.html { redirect_to covoiturages_path }
+        format.js  # <-- will render `app/views/reviews/create.js.erb`
+      end
     else
-      render 'covoiturages/show'
+      respond_to do |format|
+        format.html { render 'covoiturages/index' }
+        format.js  # <-- idem
+      end
     end
   end
 

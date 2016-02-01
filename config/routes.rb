@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :lieus, only: [:index, :show, :new, :create, :edit, :update]
 
   resources :covoiturages, only: [:index, :new, :create, :show, :edit, :update] do
-    resources :commentaires, only: [:index, :new, :create, :show, :edit, :update, :destroy]
+    resources :reviews, only: [:index, :new, :create, :show, :edit, :update, :destroy]
   end
 
 

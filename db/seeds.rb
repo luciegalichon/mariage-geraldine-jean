@@ -6,6 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+
+Covoiturage.create(
+  title: 'paris-lyon',
+  description: 'jai deux places')
+
 Lieu.create(
   name:'18 Grande Rue, 21190 Puligny-Montrachet',
   phone:'03 80 21 31 71',

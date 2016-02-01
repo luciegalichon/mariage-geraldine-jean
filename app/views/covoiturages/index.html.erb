@@ -1,20 +1,77 @@
-<h1>Covoiturage</h1>
 
-<ul>
-  <% @covoiturages.each do |covoiturage| %>
-  <div>
-    <h2>covoiturage.title</h2>
-    <p>covoiturage.description</p>
-    <%= pluralize @restaurant.reviews.size, "review" %>
-    <div id="reviews">
-      <% if covoiturage.reviews.blank? %>
-        Be the first to leave a review for <%= covoiturage.title %>
-      <% else %>
-        <% covoiturage.reviews.each do |review| %>
-          <%= render 'reviews/show', review: review %>
-        <% end %>
-      <% end %>
+<div class="container max-width">
+
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="padding-top-20 padding-bottom-20">
+        <h1 class="text-center"> Comment venir ? </h1>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="bg-pink">
+
+  <div class="container max-width">
+
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="padding-top-20 padding-bottom-20">
+          <h2 class="text-center font-green"> En train </h2>
+          <div class="bg-height-250">
+            <div class="map-static">
+              <span class="map-bg" style="background-image: url(<%= image_path 'train.png' %>)"></span>
+              <a href='http://www.rome2rio.com/fr/s/Paris/Chassagne-Montrachet' class='banner-link'></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-  <% end %>
-</ul>
+
+<div class="bg-green">
+
+  <div class="container max-width">
+
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="padding-top-20 padding-bottom-20">
+          <h2 class="text-center font-pink"> En covoiturage </h2>
+          <div class="bg-height-250">
+            <div class="map-static">
+              <span class="map-bg" style="background-image: url(<%= image_path 'covoiturage.png' %>)"></span>
+            </div>
+          </div>
+          <div class= "row">
+            <div id="covoiturages">
+              <% if Covoiturage.all.nil? %>
+                <h3 class="text-center font-pink">   Soyez le premier à poster une offre de covoiturage !</h3>
+              <% else %>
+                <h3 class="text-center font-pink"> Les covoiturages déjà postés </h3>
+                <% @covoiturages.each_with_index do |covoiturage, id| %>
+                  <div class= "col-xs-12">
+                    <div>
+                      <%= render 'covoiturages/show', covoiturage: covoiturage, id: id, review: @review %>
+                    </div>
+                  </div>
+                <% end %>
+              <% end %>
+            </div>
+          </div>
+          <div class= "row">
+            <h3 class="text-center font-pink"> Postez un covoiturage </h3>
+           <%= render 'covoiturages/new', covoiturage: @covoiturage %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+

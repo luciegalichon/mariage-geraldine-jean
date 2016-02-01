@@ -1,0 +1,4 @@
+<%= simple_form_for([ covoiturage, review ], remote: true) do |form| %>
+  <%= form.input :content, placeholder: "Envie de prendre la place ? commentez !", label:false %>
+  <%= form.submit "Ajouter un commentaire" %>
+<% end %>

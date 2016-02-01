@@ -1,11 +1,14 @@
 .card {
-  background-color: grey;
-  color: white;
+  background-color: $pink;
+  color: grey;
   height: 100px;
   // text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   position: relative;
   padding: 10px;
   margin: 10px;
+  &-100p {
+     height: 100%;
+    }
 }
 
 .card-big{

@@ -1,0 +1,18 @@
+<div class="card card-100p">
+
+<h2 class="font-green"><%=covoiturage.title%></h2>
+<p><%=covoiturage.description%></p>
+
+  <%= pluralize covoiturage.reviews.size, "Commentaires" %>
+    <div id="review-<%=id%>" class="reviews">
+      <% if covoiturage.reviews.blank? %>
+        Soyez le premier à réagir !
+      <% else %>
+        <% covoiturage.reviews.each do |review| %>
+          <%= render 'reviews/show', review: review %>
+        <% end %>
+      <% end %>
+    </div>
+     <%= render 'reviews/new', review: @review, covoiturage: covoiturage %>
+
+ </div>

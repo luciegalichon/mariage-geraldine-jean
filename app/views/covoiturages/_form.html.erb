@@ -1,0 +1,5 @@
+<%= simple_form_for(covoiturage, remote: true) do |form| %>
+  <%= form.input :title, placeholder: 'Titre', label:false %>
+  <%= form.input :description, placeholder: "Decrivez votre proposition de covoiturage : dates d'aller/retour lieux de départ et d'arrivée et contact", label:false %>
+  <%= form.submit "Publiez"%>
+<% end %>
