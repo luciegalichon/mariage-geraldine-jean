@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160201131851) do
+ActiveRecord::Schema.define(version: 20160204233251) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,11 @@ ActiveRecord::Schema.define(version: 20160201131851) do
     t.string   "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.string   "name"
+    t.string   "datea"
+    t.string   "dater"
+    t.string   "lieudep"
+    t.integer  "nbplace"
   end
 
   create_table "lieus", force: :cascade do |t|
@@ -28,14 +33,18 @@ ActiveRecord::Schema.define(version: 20160201131851) do
     t.string   "phone"
     t.string   "url"
     t.string   "adress"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.float    "latitude"
     t.float    "longitude"
+    t.string   "genre"
+    t.string   "city"
+    t.string   "description"
   end
 
   create_table "reviews", force: :cascade do |t|
     t.string   "content"
+    t.string   "name"
     t.integer  "covoiturage_id"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false

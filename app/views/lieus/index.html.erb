@@ -1,24 +1,56 @@
-<div class="sidebar sidebar-padded">
+<!-- <div class="sidebar sidebar-padded"> -->
 
-  <!-- show all spots according to filters -->
+<div class="container max-width">
+
   <div class="row">
 
-    <% @lieux.each do |lieu| %>
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-text">
-            <div class="title text-center"><%= lieu.name %></div>
-            <div class="title text-center"><%= lieu.url %></div>
-            <div class="title text-center"><%= lieu.phone %></div>
-          </div>
-        </div>
-      </div>
-    <% end %>
+    <div class="col-sm-12 padding-bottom-30">
+      <h1 class="text-center padding-20">Où dormir ? </h1>
+      <p class="text-center"> Souhaitez-vous profiter du week-end pour dormir dans une chambre d'hote au pied des vignes ou gouter aux joies du camping, voici une sélection proche du lieu du mariage rien que pour vous !</p>
+    </div>
   </div>
+
+  <div class="banner-transition text-center" style="background-image: url('<%= image_path "fond2.png" %>')">
+  </div>
+
+  <!-- show all spots according to filters -->
+
+    <% @genres.each do |g| %>
+
+      <div class="row padding-bottom-20">
+
+        <div class="col-sm-12">
+          <h2 class="text-center padding-20"><%= g.upcase %></h2>
+        </div>
+
+        <% @lieux.each do |lieu| %>
+          <% if lieu.genre == g %>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="card">
+                <div class="card-text">
+                  <div class="title text-center"><%= lieu.name %></div>
+                  <div class="title text-center"><%= lieu.city %></div>
+                  <div class="title text-center"><%= lieu.url %></div>
+                  <div class="title text-center"><%= lieu.phone %></div>
+                  <div class="title text-center"><%= lieu.description %></div>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+
+      <div class="banner-transition text-center" style="background-image: url('<%= image_path "fond2.png" %>')">
+    </div>
+
+    <% end %>
+
+
 </div>
+
 <!-- block for map -->
 
-<div id="map"></div>
+<!-- <div id="map"></div> -->
 
 
 <% content_for(:after_js) do %>

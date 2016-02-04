@@ -1,5 +1,7 @@
 <div class="card card-100p">
 
+  <div>
+
 <h2 class="font-green"><%=covoiturage.title%></h2>
 <p><%=covoiturage.description%></p>
 
@@ -14,5 +16,5 @@
       <% end %>
     </div>
      <%= render 'reviews/new', review: @review, covoiturage: covoiturage %>
-
+</div>
  </div>
