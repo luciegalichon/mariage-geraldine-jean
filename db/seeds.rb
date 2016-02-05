@@ -76,10 +76,10 @@ Lieu.create(
 Lieu.create(
   name:'Hotel de la Ferte',
   phone:'03 85 87 07 47',
-  url:'http://www.hotelferte.com/,
+  url:'http://www.hotelferte.com/',
   genre:'hotel',
   city:'Chagny',
-  description:"11, boulevard de la Liberté, (6 minutes en voiture, 65 à 70€ la chambre double)"
+  description:'11, boulevard de la Liberté, (6 minutes en voiture, 65 à 70€ la chambre double)'
   )
 
 Lieu.create(
