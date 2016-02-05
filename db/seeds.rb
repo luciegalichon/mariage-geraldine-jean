@@ -16,14 +16,7 @@ Lieu.create(
   description:"20, rue du Pâquier Fané 5 bungallow (6 minutes en voiture)"
   )
 
-Lieu.create(
-  name:'Hôtel-Restaurant Le Montrachet',
-  phone:'03 80 21 30 06',
-  url:'',
-  genre:'hotel',
-  city:'Puligny-Montrachet',
-  description:"10, place des Marronniers, (5 minutes en voiture, plutôt haut de gamme)"
-  )
+
 
 Lieu.create(
   name:'NOVOTEL de Beaune',
@@ -83,7 +76,7 @@ Lieu.create(
 Lieu.create(
   name:'Hotel de la Ferte',
   phone:'03 85 87 07 47',
-  url:'',
+  url:'http://www.hotelferte.com/,
   genre:'hotel',
   city:'Chagny',
   description:"11, boulevard de la Liberté, (6 minutes en voiture, 65 à 70€ la chambre double)"
@@ -152,12 +145,13 @@ Lieu.create(
   description:"6 ROUTE DE SANTENAY  (2 minutes à pied, 6 personnes)"
   )
 
-
 Lieu.create(
-  name:'Hôtel Le Montrachet',
+  name:'Hôtel-Restaurant Le Montrachet',
   phone:'03 80 21 30 06',
+  url:'',
   genre:'hotel',
-  city:'Puligny-Montrachet'
+  city:'Puligny-Montrachet',
+  description:"10, place des Marronniers, (5 minutes en voiture, plutôt haut de gamme)"
   )
 
 Lieu.create(
@@ -165,21 +159,16 @@ Lieu.create(
   phone:'03 80 21 37 65',
   url:'http://www.maison-olivierleflaive.fr/',
   genre:'hotel',
-  city:'Puligny-Montrachet'
-  )
-Lieu.create(
-  name:'Hôtel La Chouette',
-  phone:'03 80 21 95 60',
-  url:'http://www.la-chouette.fr/fr/',
-  genre:'hotel',
-  city:'Puligny-Montrachet'
+  city:'Puligny-Montrachet',
+  description: 'à 2 km du Château'
   )
 
 Lieu.create(
   name:'Domaine des Anges',
   phone:'09 70 73 07 08',
   genre:'hotel',
-  city:'Puligny-Montrachet'
+  city:'Puligny-Montrachet',
+  description: 'à 2 km du Château'
   )
 
 Lieu.create(
@@ -187,7 +176,8 @@ Lieu.create(
   phone:'03 80 21 33 06',
   url:'http://www.jacquesbavard.com/index.php?page=sejour&ssmenu=tarifs',
   genre:'hotel',
-  city:'Puligny-Montrachet'
+  city:'Puligny-Montrachet',
+  description: 'à 2 km du Château'
   )
 
 
@@ -196,7 +186,8 @@ Lieu.create(
   phone:'03 80 21 97 46',
   url:'http://www.les-gageres.fr/nous-contacter.html',
   genre:'hotel',
-  city:'Puligny-Montrachet'
+  city:'Puligny-Montrachet',
+  description: 'à 2 km du Château'
   )
 
 
@@ -205,16 +196,8 @@ Lieu.create(
   phone:'03 85 87 67 67',
   url:'http://hotel-le-chagny.fr/',
   genre:'hotel',
-  city:'Chagny'
-  )
-
-
-Lieu.create(
-  name:'Hôtel de La Ferté',
-  phone:'03 85 87 07 47',
-  url:'http://www.hotelferte.com/',
-  genre:'hotel',
-  city:'Chagny'
+  city:'Chagny',
+  description: 'à 2 km du Château'
   )
 
 
@@ -223,7 +206,8 @@ Lieu.create(
   phone:'03 85 87 04 97',
   url:'http://auberge.musardiere.pagesperso-orange.fr/',
   genre:'hotel',
-  city:'Chagny'
+  city:'Chagny',
+  description: 'à 2 km du Château'
   )
 
 
@@ -232,7 +216,8 @@ Lieu.create(
   phone:'03 85 87 64 40',
   url:'http://www.hoteldelaposte-chagny71.com/',
   genre:'hotel',
-  city:'Chagny'
+  city:'Chagny',
+  description: 'à 2 km du Château'
   )
 
 
@@ -241,14 +226,16 @@ Lieu.create(
   phone:'03 85 87 13 86',
   url:'http://www.chateau-bellecroix.com/',
   genre:'hotel',
-  city:'Chagny'
+  city:'Chagny',
+  description: 'à 2 km du Château'
   )
 
 Lieu.create(
   name:'La Belle Jardinière Chagny',
   phone:'09 53 44 07 30',
   genre:'hotel',
-  city:'Chagny'
+  city:'Chagny',
+  description: 'à 2 km du Château'
   )
 
 Lieu.create(
@@ -256,7 +243,8 @@ Lieu.create(
   phone:'03 80 21 23 47',
   url:'http://www.hotel-meursault.fr/',
   genre:'hotel',
-  city:'Meursault'
+  city:'Meursault',
+  description: 'à 7 km du Château'
   )
 
 Lieu.create(
@@ -264,95 +252,109 @@ Lieu.create(
   phone:'03 80 21 23 25',
   url:'http://www.lechevreuil.fr/',
   genre:'hotel',
-  city:'Meursault')
+  city:'Meursault',
+  description: 'à 7 km du Château')
 
 Lieu.create(
   name:'Hôtel les Charmes',
   phone:'03 80 21 63 53',
   url:'http://www.hotellescharmes.com/fr/',
   genre:'hotel',
-  city:'Meursault')
+  city:'Meursault',
+  description: 'à 7 km du Château')
 
 Lieu.create(
   name:'Hôtel La Chouette',
   phone:'03 80 21 95 60',
   url:'http://www.la-chouette.fr/fr/',
   genre:'hotel',
-  city:'Meursault')
+  city:'Meursault',
+  description: 'à 7 km du Château')
 
 Lieu.create(
   name:'Château de Cîteaux',
   phone:'03 80 20 62 80',
   url:'http://www.lacueillette.com',
   genre:'hotel',
-  city:'Meursault')
+  city:'Meursault',
+  description: 'à 7 km du Château')
 
 Lieu.create(
   name:'Hôtel les Arts',
   phone:'03 80 21 20 28',
   url:'http://www.hotel-restaurant-les-arts.fr/',
   genre:'hotel',
-  city:'Meursault')
+  city:'Meursault',
+  description: 'à 7 km du Château')
 
 Lieu.create(
   name:'Hôtel le Mont Mélian',
   phone:'03 80 21 64 90',
   genre:'hotel',
-  city:'Meursault')
+  city:'Meursault',
+  description: 'à 7 km du Château')
 
 Lieu.create(
   name:'Hôtel du Centre',
   phone:'03 80 21 20 75',
   url:'http://hotel-du-centre-meursault.com/',
   genre:'hotel',
-  city:'Meursault')
+  city:'Meursault',
+  description: 'à 7 km du Château')
 
 Lieu.create(
   name:'Chambre d’hôtes Les Ecureuils',
   phone:'03 80 21 27 82',
   url:'http://www.lesecureuils-meursault.com/',
   genre:'hotel',
-  city:'Meursault')
+  city:'Meursault',
+  description: 'à 7 km du Château')
 
 Lieu.create(
   name:'Auberge du Camp Romain',
   phone:'09 70 73 07 91',
   url:'http://www.auberge-du-camp-romain.com/',
   genre:'hotel',
-  city:'Chassey-le-Camp')
+  city:'Chassey-le-Camp',
+  description: 'à 9 km du Château')
 
 Lieu.create(
   name:'Le Clos du Colombier',
   phone:'03 80 22 00 27',
   url:'http://closducolombier.com/fr/index.aspx',
   genre:'hotel',
-  city:'Pommard')
+  city:'Pommard',
+  description: 'à 12 km du Château')
 
 Lieu.create(
   name:'Maison d‘hôtes « Les Nuits de Saint-Jean »',
   phone:'03 80 22 49 98',
   url:'http://www.violot-guillemard.fr/maison-hotes/tarifs/',
   genre:'hotel',
-  city:'Pommard')
+  city:'Pommard',
+  description: 'à 12 km du Château')
 
 Lieu.create(
   name:'Hôtel le Panorama',
   phone:'03 80 26 22 17',
   url:'http://www.le-panorama.com/fr/index.php',
   genre:'hotel',
-  city:'Beaune')
+  city:'Beaune',
+  description: 'à 15 km du Château')
 
 Lieu.create(
   name:'Hostellerie de Bretonniere',
   phone:'03 80 22 15 77',
   url:'http://www.hotelbretonniere.com/fr',
   genre:'hotel',
-  city:'Beaune')
+  city:'Beaune',
+  description: 'à 15 km du Château')
 
 Lieu.create(
   name:'Hôtel Belle Epoque',
   phone:'09 70 73 06 35',
   url:'http://www.hotel-belleepoque-beaune.com/fr/accueil-hotel-belle-epoque-beaune.html',
   genre:'hotel',
-  city:'Beaune')
+  city:'Beaune',
+  description: 'à 15 km du Château')
 
