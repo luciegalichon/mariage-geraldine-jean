@@ -1,6 +1,7 @@
 class ReviewsController < ApplicationController
 
 def create
+
     @covoiturage = Covoiturage.find(params[:covoiturage_id])
     @review = Review.new(review_params)
     @review.covoiturage = @covoiturage
@@ -21,7 +22,7 @@ def create
   private
 
   def review_params
-    params.require(:review).permit(:content)
+    params.require(:review).permit(:content, :name)
   end
 
 end

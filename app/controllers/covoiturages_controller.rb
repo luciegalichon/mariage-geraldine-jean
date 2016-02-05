@@ -37,7 +37,7 @@ end
  private
 
   def covoit_params
-    params.require(:covoiturage).permit(:title, :description)
+    params.require(:covoiturage).permit(:title, :description, :datea, :dater, :lieudep, :nbplace)
   end
 
 end

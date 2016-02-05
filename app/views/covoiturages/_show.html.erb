@@ -1,20 +1,25 @@
-<div class="card card-100p">
+<div class="bg-height-100p bg-green padding-20">
 
-  <div>
+  <div class="text-left">
 
-<h2 class="font-green"><%=covoiturage.title%></h2>
-<p><%=covoiturage.description%></p>
+<h2 class="text-center"><%=covoiturage.title%></h2>
+<p><strong>Nom du conducteur : </strong><%=covoiturage.name%></p>
+<p><strong>Date aller : </strong><%=covoiturage.datea%>, date retour: <%=covoiturage.datea%></p>
+<p><strong>Lieu aller/retour : </strong><%=covoiturage.lieudep%></p>
+<p><strong>Nombre de places : </strong><%=covoiturage.nbplace%></p>
+<p><strong>Description : </strong><%=covoiturage.description%></p>
 
+ </div>
+</div>
+
+<div class="bg-height-100p bg-pink margin-30 padding-10">
   <%= pluralize covoiturage.reviews.size, "Commentaires" %>
-    <div id="review-<%=id%>" class="reviews">
-      <% if covoiturage.reviews.blank? %>
-        Soyez le premier à réagir !
-      <% else %>
-        <% covoiturage.reviews.each do |review| %>
-          <%= render 'reviews/show', review: review %>
+      <% if !covoiturage.reviews.blank? %>
+      <div id="review-<%=id%>" class="reviews">
+        <% covoiturage.reviews.each_with_index do |review, i| %>
+          <%= render 'reviews/show', review: review, number: i %>
         <% end %>
+       </div>
       <% end %>
-    </div>
      <%= render 'reviews/new', review: @review, covoiturage: covoiturage %>
 </div>
- </div>

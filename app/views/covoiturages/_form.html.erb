@@ -1,5 +1,10 @@
 <%= simple_form_for(covoiturage, remote: true) do |form| %>
   <%= form.input :title, placeholder: 'Titre', label:false %>
-  <%= form.input :description, placeholder: "Decrivez votre proposition de covoiturage : dates d'aller/retour lieux de départ et d'arrivée et contact", label:false %>
+  <%= form.input :name, placeholder: 'Votre nom', label:false %>
+  <%= form.input :datea, placeholder: 'Date aller', label:false %>
+  <%= form.input :dater, placeholder: 'Date retour', label:false %>
+  <%= form.input :lieudep, placeholder: "Lieux de départ et d'arrivée", label:false %>
+  <%= form.input :nbplace, placeholder: "Nombre de places", label:false %>
+  <%= form.input :description, placeholder: "Si vous souhaitez donner d'autres informations, type contact", label:false %>
   <%= form.submit "Publiez"%>
 <% end %>
