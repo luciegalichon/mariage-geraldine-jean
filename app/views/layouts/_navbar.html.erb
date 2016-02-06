@@ -1,13 +1,13 @@
-<nav class="navbar-wagon">
-  <div class="container navbar-wagon-container navbar-wagon-fixed navbar-wagon-height">
+<div class="navbar-wagon navbar-wagon-fixed navbar-wagon-height ">
+  <!-- Logo -->
+  <%= link_to root_path, class: "navbar-wagon-brand" do %>
+    <%= image_tag "tampon-rose.png" %>
+  <% end %>
 
-    <a href="/">
-      <%= image_tag 'tampon-rose.png', class: "navbar-wagon-logo" %>
-    </a>
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-    <div class="navbar-wagon-pusher"></div>
-
-    <hr class="hidden-xs hidden-sm">
+   <hr class="hidden-xs hidden-sm">
     <a href="/" class="navbar-wagon-item navbar-wagon-link">Géraldine et Jean</a>
     <hr class="hidden-xs hidden-sm">
     <a href="<%=mariage_path%> " class="navbar-wagon-item navbar-wagon-link">Lieux du mariage</a>
@@ -29,32 +29,100 @@
     <hr>
 
   </div>
-</nav>
+
+  <!-- Dropdown list appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="<%=mariage_path%> ">Lieux du mariage</a></li>
+        <li><a href="/lieus">Où se loger</a></li>
+        <li><a href="/covoiturages">Comment venir</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<!-- <nav class="navbar-wagon">
+  <div class="container navbar-wagon-container navbar-wagon-fixed navbar-wagon-height margin-bottom-180 hidden-xs hidden-sm">
+
+    <a href="/">
+      <%= image_tag 'tampon-rose.png', class: "navbar-wagon-logo" %>
+    </a>
+
+    <div class="navbar-wagon-pusher hidden-xs hidden-sm"></div>
+
+    <hr class="hidden-xs hidden-sm">
+    <a href="/" class="navbar-wagon-item navbar-wagon-link">Géraldine et Jean</a>
+    <hr class="hidden-xs hidden-sm">
+    <a href="<%=mariage_path%> " class="navbar-wagon-item navbar-wagon-link">Lieux du mariage</a>
+    <hr class="hidden-xs hidden-sm">
+    <a href="/lieus" class="navbar-wagon-item navbar-wagon-link">Où se loger</a>
+    <hr class="hidden-xs hidden-sm">
+    <a href="/covoiturages" class="navbar-wagon-item navbar-wagon-link">Comment venir ?</a>
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown"> <p>Comment venir ?</p></a>
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><a href="#">Covoiturage</a></li>
+          <li><a href="#">Autre</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="hidden-xs hidden-sm">
+    <a href="/rsvp" class="navbar-wagon-item navbar-wagon-link">RSVP</a>
+    <hr>
+
+  </div>
+
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="<%=mariage_path%> ">Lieux du mariage</a></li>
+        <li><a href="/lieus">Où se loger</a></li>
+        <li><a href="/covoiturages">Comment venir</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</nav> -->
 
 <% content_for(:after_js) do %>
   <%= javascript_tag do %>
 
       $(window).on("scroll", function(e) {
+      var width = $(window).width()
+      var height = $(window).height()
 
-        if ($(window).width() > 768) {
-          console.log($(window).width())
 
-          if ($(window).scrollTop() >= 100) {
+          if ( $(window).scrollTop() >= 100 ) {
             $('.navbar-wagon-height').css("height", 70)
-            $('.navbar-wagon-logo').css("height", 50)
-            $('.navbar-wagon-logo').css("width", 50)
-             console.log("yo")
+            $('a.navbar-wagon-brand img').css("height", 50)
+            $('a.navbar-wagon-brand img').css("width", 50)
+
           };
 
-          if ($(window).scrollTop() < 100 ) {
+          if ($(window).scrollTop() < 100) {
             $('.navbar-wagon-height').css("height", 180)
-            $('.navbar-wagon-logo').css("height", 150)
-            $('.navbar-wagon-logo').css("width", 150)
-             console.log("yo")
+            $('a.navbar-wagon-brand img').css("height", 150)
+            $('a.navbar-wagon-brand img').css("width", 150)
+
           };
 
-        };
        });
 
   <% end %>
+
+  <%= javascript_tag do %>
+    $(function() {
+      if ($(window).width() <= 768) {
+          $('.navbar-wagon-height').css("height", 70)
+          $('a.navbar-wagon-brand img').css("height", 50)
+          $('a.navbar-wagon-brand img').css("width", 50)
+      };
+    });
+  <% end %>
+
 <% end %>
