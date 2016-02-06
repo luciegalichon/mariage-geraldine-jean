@@ -95,6 +95,7 @@
       $(window).on("scroll", function(e) {
       var width = $(window).width()
       var height = $(window).height()
+        if ($(window).width() > 768) {
 
 
           if ( $(window).scrollTop() >= 100 ) {
@@ -111,6 +112,7 @@
 
           };
 
+        };
        });
 
   <% end %>

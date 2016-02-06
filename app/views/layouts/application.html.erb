@@ -20,6 +20,9 @@
         var width = $(window).width()
           if ((width <= 768)) {
               $('#marge').removeClass("margin-top-180")
+              $('.navbar-wagon-height').css("height", 70)
+              $('a.navbar-wagon-brand img').css("height", 50)
+              $('a.navbar-wagon-brand img').css("width", 50)
           }
       });
       <% end %>
