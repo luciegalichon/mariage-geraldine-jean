@@ -382,7 +382,7 @@
     <% @photos.each do |photo| %>
       <div class= "col-xs-12 col-md-4">
         <div class="card" style="background-color: white">
-          <a href=<%= image_path photo %> class='swipebox' title="Nos jours heureux">
+          <a href=<%= image_path photo %> data-lightbox="roadtrip" title="Nos jours heureux">
             <img src=<%= image_path photo %> alt="image" style="width: 300px; height:200px;">
           </a>
         </div>
