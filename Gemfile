@@ -38,4 +38,5 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-lightbox'
   # for Gmaps4rails
   gem "rails-assets-underscore"
+  gem 'rails-assets-smoothscroll'
 end

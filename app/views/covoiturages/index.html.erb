@@ -5,23 +5,31 @@
     <div class="col-xs-12">
       <div class="padding-top-20 padding-bottom-20">
         <h1 class="text-center"> Comment venir ? </h1>
-<a href="#covoiturage_new" class="font-green">En train</a>
-<a href="#covoiturage_new" class="font-green">En voiture</a>
-<a href="#covoiturage_new" class="font-green">En covoiturage</a>
-
-        <p class="text-center"> Si vous venez en voiture, n'hésitez pas à proposer un
-          <a href="#covoiturage_new" class="font-green">covoiturage</a></p>
+        <div class="row">
+          <div class="col-xs-12 col-md-3">
+            <a href="#train" class="font-green">En train</a>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <a href="#voiture" class="font-green">En voiture</a>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <a href="#covoiturage_new" class="font-green">Proposer un covoiturage</a>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <a href="#covoiturages" class="font-green">Voir les covoiturages</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="banner-transition text-center" style="background-image: url('<%= image_path "fond2.png" %>')">
+  <div id="train" class="banner-transition text-center" style="background-image: url('<%= image_path "fond2.png" %>')">
   </div>
 
-    <div class="row">
+    <div class="row" >
       <div class="col-xs-12">
         <div class="padding-top-20">
-          <h2 class="text-center font-green"> En train </h2>
+          <h2  class="text-center font-green"> En train </h2>
         </div>
       </div>
       <div class="col-xs-12">
@@ -30,34 +38,24 @@
           <h3>Paris Gare de Lyon -> le Creusot (1h20)</h3>
           <p>Puis, location d'une voiture </p>
           <p>via Hertz ou Enterprise (le Creusot, 30 minutes jusqu'à Cheilly les Maranges) </p>
-          <p>via Rent a Car, Hertz, Ada (Beaune, 25 minutes jusqu'à Cheilly les Maranges</p>
+          <p id="voiture">via Rent a Car, Hertz, Ada (Beaune, 25 minutes jusqu'à Cheilly les Maranges</p>
         </div>
       </div>
     </div>
-          <!-- <div class="bg-height-250 bg-white">
-            <div class="text-center">
 
-            </div>
-          </div> -->
-<!--           <div class="bg-height-250">
-            <div class="map-static">
-              <span class="map-bg" style="background-image: url(<%= image_path 'train.png' %>)"></span>
-              <a href='http://www.rome2rio.com/fr/s/Paris/Chassagne-Montrachet' class='banner-link' target="_blank"></a>
-            </div>
-          </div> -->
  <div class="banner-transition text-center" style="background-image: url('<%= image_path "fond2.png" %>')">
   </div>
 
-    <div class="row">
+    <div class="row" >
       <div class="col-xs-12">
         <div class="padding-top-20">
-          <h2 class="text-center font-green"> En voiture </h2>
+          <h2  class="text-center font-green"> En voiture </h2>
         </div>
       </div>
       <div class="col-xs-12">
         <div class="padding-bottom-20 text-center">
           <h3>3h depuis Paris centre</h3>
-          <p>A6 sortie beaune</p>
+          <p id="covoiturages">A6 sortie beaune</p>
         </div>
       </div>
     </div>
@@ -71,13 +69,13 @@
         </div>
       <div class="col-xs-12">
           <div class= "row">
-            <div id="covoiturages">
+            <div >
               <% if Covoiturage.all.nil? %>
                 <h3 class="text-center"> Soyez le premier à poster une offre de covoiturage !</h3>
               <% else %>
                 <h3 class="text-center"> Les covoiturages déjà postés </h3>
                 <% @covoiturages.each_with_index do |covoiturage, id| %>
-                  <div class= "col-xs-12">
+                  <div class= "col-xs-12" >
                     <div>
                       <%= render 'covoiturages/show', covoiturage: covoiturage, id: id, review: @review %>
                     </div>
@@ -86,7 +84,7 @@
               <% end %>
             </div>
           </div>
-          <div class= "row padding-bottom-50" id="covoiturage_new">
+          <div class= "row padding-bottom-50 " id="covoiturage_new" >
             <h3 class="text-center font-pink"> Postez un covoiturage </h3>
            <%= render 'covoiturages/new', covoiturage: @covoiturage %>
           </div>

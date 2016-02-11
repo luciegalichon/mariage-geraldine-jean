@@ -1,4 +1,4 @@
-class CreateLieus < ActiveRecord::Migration
+class Createlieux < ActiveRecord::Migration
   def change
     create_table :lieus do |t|
       t.string :name

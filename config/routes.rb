@@ -2,13 +2,15 @@ Rails.application.routes.draw do
   root to: 'mariages#home'
 
 
-  resources :lieus, only: [:index, :show, :new, :create, :edit, :update]
+  resources :lieus, only: [ :show, :new, :create, :edit, :update]
 
   resources :covoiturages, only: [:index, :new, :create, :show, :edit, :update] do
     resources :reviews, only: [:index, :new, :create, :show, :edit, :update, :destroy]
   end
 
   get 'rsvp' => 'mariages#rsvp'
+
+  get 'lieux' => 'lieus#index', as: "lieux"
 
   get 'mariage' => 'mariages#mariage'
 
