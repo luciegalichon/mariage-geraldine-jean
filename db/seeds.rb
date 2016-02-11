@@ -10,100 +10,28 @@ Lieu.create(
 Lieu.create(
   name:'Camping Le Pâquier Fané',
   phone:'03 85 87 21 42',
-  url:'',
+  url:'http://www.campingchagny.com/',
   genre:'camping',
   city:'Chagny',
   description:"20, rue du Pâquier Fané 5 bungallow (6 minutes en voiture)"
   )
 
 
-
-Lieu.create(
-  name:'NOVOTEL de Beaune',
-  phone:'03 80 24 59 00',
-  url:'',
-  genre:'hotel',
-  city:'Beaune',
-  description:"16 rue du Moulin Noize (15 minutes en voiture)"
-  )
-
-
-Lieu.create(
-  name:'Mercure de Beaune ',
-  phone:'03 80 22 22 00',
-  url:'',
-  genre:'hotel',
-  city:'Beaune',
-  description:"Avenue Charles de Gaulle (16 minutes en voiture)"
-  )
-
-Lieu.create(
-  name:'Hôtel La Chouette ',
-  phone:'03 80 21 95 60',
-  url:'',
-  genre:'hotel',
-  city:'Puligny-Montrachet',
-  description:"3 bis, rue des Creux de Chagny (5 minutes en voiture, 145€ la chambre double)"
-  )
-
-Lieu.create(
-  name:'Hostellerie de Bretonnière',
-  phone:'03 80 22 15 77',
-  url:'',
-  genre:'hotel',
-  city:'Beaune',
-  description:"43, rue du Faubourg Bretonnière (15 minutes en voiture, 80 à 120€ la chambre double)"
-  )
-
-Lieu.create(
-  name:'Ibis Budget Beaune',
-  phone:'08 92 68 32 71',
-  url:'',
-  genre:'hotel',
-  city:'Beaune',
-  description:"14, rue du Moulin Noize ( 16 minutes en voiture, 45 à 65€ la chambre double)"
-  )
-
-Lieu.create(
-  name:'L’Etape à Santenay ',
-  phone:'03 80 21 39 43',
-  url:'',
-  genre:'hotel',
-  city:'Santenay',
-  description:"10, place du Jet d'Eau (7 minutes en voiture, 85€ la chambre double)"
-  )
-
-Lieu.create(
-  name:'Hotel de la Ferte',
-  phone:'03 85 87 07 47',
-  url:'http://www.hotelferte.com/',
-  genre:'hotel',
-  city:'Chagny',
-  description:'11, boulevard de la Liberté, (6 minutes en voiture, 65 à 70€ la chambre double)'
-  )
-
 Lieu.create(
   name:'Hameau de Blagny - Maison Maizières',
   phone:'06 09 30 15 87',
-  url:'',
+  url:'http://www.hameau-de-blagny.com/',
   genre:'gite',
   city:'Puligny-Montrachet',
   description:"10, Hameau de Blagny (5 minutes en voiture, 6 personnes)"
   )
 
-Lieu.create(
-  name:'La Garance',
-  phone:'06 20 75 20 33',
-  url:'',
-  genre:'gite',
-  city:'Santenay',
-  description:"1, rue Petit (10 minutes en voiture, 10 personnes)"
-  )
+
 
 Lieu.create(
   name:'Les Gageres',
   phone:'03 80 21 97 46',
-  url:'',
+  url:'http://www.chambres-hotes.fr/chambres-hotes_les-gageres_puligny-montrachet_30022.htm',
   genre:'gite',
   city:'Puligny-Montrachet',
   description:"17 RUE DROUHIN (5 minutes en voiture, 60€ la chambre double)"
@@ -112,16 +40,24 @@ Lieu.create(
 Lieu.create(
   name:'Le moulin saule',
   phone:'03 80 20 60 17',
-  url:'',
+  url:'http://www.gites-de-france.com/location-vacances-Santenay-Gite-Le-Moulin-Saule-21G638.html',
   genre:'gite',
   city:'Santenay',
   description:"4, rue du Moulin Saule (6 minutes en voiture, 6 personnes)"
+  )
+Lieu.create(
+  name:'La Garance',
+  phone:'06 20 75 20 33',
+  url:'http://www.gitelagarance.com/',
+  genre:'gite',
+  city:'Santenay',
+  description:"1, rue Petit (10 minutes en voiture, 10 personnes)"
   )
 
 Lieu.create(
   name:'La mere Poulot',
   phone:'03 80 45 97 15',
-  url:'',
+  url:'http://www.gites-de-france.com/location-vacances-Santenay-Gite-La-Mere-Poulot-21G613.html',
   genre:'gite',
   city:'Santenay',
   description:"2, rue de Narosse (9 minutes en voiture, 7 personnes)"
@@ -130,7 +66,7 @@ Lieu.create(
 Lieu.create(
   name:'Gîte Clos Genêts',
   phone:'resa par internet',
-  url:'Réservez via le site des Gites de France',
+  url:'http://www.gites-de-france.com/location-vacances-Santenay-Gite-Clos-Genets-21G951.html',
   genre:'gite',
   city:'Santenay',
   description:"(10 minutes en voiture, 8 personnes)"
@@ -139,7 +75,7 @@ Lieu.create(
 Lieu.create(
   name:'Le Gite du Montrachet',
   phone:'03 80 21 31 71',
-  url:'',
+  url:'http://www.legitedumontrachet.com/',
   genre:'gite',
   city:'Chassagne Montrachet',
   description:"6 ROUTE DE SANTENAY  (2 minutes à pied, 6 personnes)"
@@ -148,11 +84,22 @@ Lieu.create(
 Lieu.create(
   name:'Hôtel-Restaurant Le Montrachet',
   phone:'03 80 21 30 06',
-  url:'',
+  url:'http://www.le-montrachet.com/fr/',
   genre:'hotel',
   city:'Puligny-Montrachet',
   description:"10, place des Marronniers, (5 minutes en voiture, plutôt haut de gamme)"
   )
+
+Lieu.create(
+  name:'Hôtel La Chouette',
+  phone:'03 80 21 95 60',
+  url:'http://www.la-chouette.fr/fr/',
+  genre:'hotel',
+  city:'Puligny-Montrachet',
+  description:"3 bis, rue des Creux de Chagny (5 minutes en voiture, 145€ la chambre double)"
+  )
+
+
 
 Lieu.create(
   name:'Maison d’Olivier Leflaive',
@@ -167,6 +114,7 @@ Lieu.create(
   name:'Domaine des Anges',
   phone:'09 70 73 07 08',
   genre:'hotel',
+  url:'http://www.domainedesangespuligny.com/',
   city:'Puligny-Montrachet',
   description: 'à 2 km du Château'
   )
@@ -200,7 +148,6 @@ Lieu.create(
   description: 'à 2 km du Château'
   )
 
-
 Lieu.create(
   name:'Auberge de la Musardière',
   phone:'03 85 87 04 97',
@@ -208,6 +155,15 @@ Lieu.create(
   genre:'hotel',
   city:'Chagny',
   description: 'à 2 km du Château'
+  )
+
+Lieu.create(
+  name:'Hotel de la Ferte',
+  phone:'03 85 87 07 47',
+  url:'http://www.hotelferte.com/',
+  genre:'hotel',
+  city:'Chagny',
+  description:'11, boulevard de la Liberté, (6 minutes en voiture, 65 à 70€ la chambre double)'
   )
 
 
@@ -233,6 +189,7 @@ Lieu.create(
 Lieu.create(
   name:'La Belle Jardinière Chagny',
   phone:'09 53 44 07 30',
+  url:'http://www.booking.com/searchresults.fr.html?aid=318615;label=New_French_FR_FR_21427176985-EGcpj55bgemW1QYsCbqg6QS84604480705%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg;sid=406edfe15953edcb10f46987168687ee;dcid=4;dest_id=-1417704;dest_type=city;highlighted_hotels=594079;hlrd=1;redirected=1;source=hotel&gclid=CjwKEAiA__C1BRDqyJOQ8_Tq230SJABWBSxnrYGNWtQ-77aEG3cP6aUruNfQR_PyZgefHYhkaI0_gRoCBdjw_wcB&'
   genre:'hotel',
   city:'Chagny',
   description: 'à 2 km du Château'
@@ -319,6 +276,15 @@ Lieu.create(
   description: 'à 9 km du Château')
 
 Lieu.create(
+  name:'L’Etape à Santenay',
+  phone:'03 80 21 39 43',
+  url:'http://www.etapedesantenay.com/',
+  genre:'hotel',
+  city:'Santenay',
+  description:"10, place du Jet d'Eau (7 minutes en voiture, 85€ la chambre double)"
+  )
+
+Lieu.create(
   name:'Le Clos du Colombier',
   phone:'03 80 22 00 27',
   url:'http://closducolombier.com/fr/index.aspx',
@@ -357,4 +323,41 @@ Lieu.create(
   genre:'hotel',
   city:'Beaune',
   description: 'à 15 km du Château')
+
+Lieu.create(
+  name:'NOVOTEL de Beaune',
+  phone:'03 80 24 59 00',
+  url:'http://www.novotel.com/fr/hotel-1177-novotel-beaune/index.shtml',
+  genre:'hotel',
+  city:'Beaune',
+  description:"16 rue du Moulin Noize (15 minutes en voiture)"
+  )
+
+
+Lieu.create(
+  name:'Mercure de Beaune',
+  phone:'03 80 22 22 00',
+  url:'http://www.mercure.com/fr/hotel-1217-hotel-mercure-beaune-centre/index.shtml',
+  genre:'hotel',
+  city:'Beaune',
+  description:"Avenue Charles de Gaulle (16 minutes en voiture)"
+  )
+
+Lieu.create(
+  name:'Hostellerie de Bretonnière',
+  phone:'03 80 22 15 77',
+  url:'http://www.hotelbretonniere.com/fr/?gclid=CjwKEAiA__C1BRDqyJOQ8_Tq230SJABWBSxn8Qn-q8mGAQs5xRcsTC3BteyPE6fBIq5i6uEKIU7RHhoC4yPw_wcB',
+  genre:'hotel',
+  city:'Beaune',
+  description:"43, rue du Faubourg Bretonnière (15 minutes en voiture, 80 à 120€ la chambre double)"
+  )
+
+Lieu.create(
+  name:'Ibis Budget Beaune',
+  phone:'08 92 68 32 71',
+  url:'http://www.ibis.com/fr/hotel-2524-ibis-budget-beaune/index.shtml',
+  genre:'hotel',
+  city:'Beaune',
+  description:"14, rue du Moulin Noize ( 16 minutes en voiture, 45 à 65€ la chambre double)"
+  )
 

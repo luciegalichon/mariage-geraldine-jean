@@ -1,8 +1,8 @@
-<div class="bg-height-100p bg-green padding-20">
+<div class="bg-height-100p border-total-green margin-bottom-5 padding-20">
 
   <div class="text-left">
 
-<h2 class="text-center"><%=covoiturage.title%></h2>
+<h2 class="text-center" style="color: black;"><%=covoiturage.title%></h2>
 <p><strong>Nom du conducteur : </strong><%=covoiturage.name%></p>
 <p><strong>Date aller : </strong><%=covoiturage.datea%>, date retour: <%=covoiturage.datea%></p>
 <p><strong>Lieu aller/retour : </strong><%=covoiturage.lieudep%></p>
@@ -12,12 +12,12 @@
  </div>
 </div>
 
-<div class="bg-height-100p bg-pink margin-30 padding-10">
-  <%= pluralize covoiturage.reviews.size, "Commentaires" %>
+<div class="bg-height-100p bg-pink padding-10">
+  <p><strong><%= pluralize covoiturage.reviews.size, "Commentaires" %></strong></p>
       <% if !covoiturage.reviews.blank? %>
-      <div id="review-<%=id%>" class="reviews">
+      <div id="review-<%=id%>" style="margin-bottom: 20px;">
         <% covoiturage.reviews.each_with_index do |review, i| %>
-          <%= render 'reviews/show', review: review, number: i %>
+          <%= render 'reviews/show', review: review, number: i+1 %>
         <% end %>
        </div>
       <% end %>
