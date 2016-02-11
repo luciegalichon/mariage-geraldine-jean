@@ -5,7 +5,7 @@
   $('#new_covoiturage').html("<%= j render 'covoiturages/form', covoiturage: @covoiturage %>");
 <% else %>
   // Create a paragraph for the new review. But hide it.
-  var new_covoiturage = $("<%= j render 'covoiturages/show', covoiturage: @covoiturage, id: @id , review: @review %>").hide();
+  var new_covoiturage = $("<%= j render 'covoiturages/show', covoiturage: @covoiturage, id: @covoiturage.id , review: @review %>").hide();
   // Add it to the DOM, at the end of the existing reviews. It's still hidden.
   $('#covoiturages').append(new_covoiturage);
   // Show the new review with an animation!
