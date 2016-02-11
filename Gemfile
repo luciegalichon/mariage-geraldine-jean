@@ -39,4 +39,5 @@ source 'https://rails-assets.org' do
   # for Gmaps4rails
   gem "rails-assets-underscore"
   gem 'rails-assets-smoothscroll'
+  gem 'rails-assets-swipebox'
 end

@@ -127,6 +127,7 @@ GEM
       rails-assets-jquery (>= 1.7)
     rails-assets-smoothscroll (0.1.0)
       rails-assets-raf.js (~> 0.0.4)
+    rails-assets-swipebox (1.4.1)
     rails-assets-underscore (1.8.3)
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
@@ -199,6 +200,7 @@ DEPENDENCIES
   rails-assets-lightbox!
   rails-assets-slick.js!
   rails-assets-smoothscroll!
+  rails-assets-swipebox!
   rails-assets-underscore!
   rails_12factor
   sass-rails (~> 5.0)
