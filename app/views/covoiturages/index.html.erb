@@ -7,16 +7,16 @@
         <h1 class="text-center"> Comment venir ? </h1>
         <div class="row">
           <div class="col-xs-12 col-md-3">
-            <a href="#train" class="font-green">En train</a>
+            <a href="#train" class="js-scrollTo font-green">En train</a>
           </div>
           <div class="col-xs-12 col-md-3">
-            <a href="#voiture" class="font-green">En voiture</a>
+            <a href="#voiture" class="js-scrollTo font-green">En voiture</a>
           </div>
           <div class="col-xs-12 col-md-3">
-            <a href="#covoiturage_new" class="font-green">Proposer un covoiturage</a>
+            <a href="#covoiturage_new" class="js-scrollTo font-green">Proposer un covoiturage</a>
           </div>
           <div class="col-xs-12 col-md-3">
-            <a href="#covoiturages" class="font-green">Voir les covoiturages</a>
+            <a href="#covoiturages" class="js-scrollTo font-green">Voir les covoiturages</a>
           </div>
         </div>
       </div>
@@ -34,8 +34,8 @@
       </div>
       <div class="col-xs-12">
         <div class="padding-bottom-20 text-center">
-          <h3>Paris Gare de Lyon -> Beaune (2h)</h3>
-          <h3>Paris Gare de Lyon -> le Creusot (1h20)</h3>
+          <h3> <strong>Paris Gare de Lyon -> Beaune (2h)</strong></h3>
+          <h3> <strong>Paris Gare de Lyon -> le Creusot (1h20)</strong></h3>
           <p>Puis, location d'une voiture </p>
           <p>via Hertz ou Enterprise (le Creusot, 30 minutes jusqu'à Cheilly les Maranges) </p>
           <p id="voiture">via Rent a Car, Hertz, Ada (Beaune, 25 minutes jusqu'à Cheilly les Maranges</p>
@@ -54,7 +54,7 @@
       </div>
       <div class="col-xs-12">
         <div class="padding-bottom-20 text-center">
-          <h3>3h depuis Paris centre</h3>
+          <h3> <strong>3h depuis Paris centre</strong></h3>
           <p id="covoiturages">A6 sortie beaune</p>
         </div>
       </div>
@@ -94,7 +94,19 @@
 
     </div>
 
+<% content_for(:after_js) do %>
+  <%= javascript_tag do %>
 
+    $(document).ready(function() {
+        $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+          var page = $(this).attr('href'); // Page cible
+          var speed = 750; // Durée de l'animation (en ms)
+          $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+          return false;
+        });
+      });
+  <% end %>
+<% end %>
 
 
 
