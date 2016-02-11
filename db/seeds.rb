@@ -189,7 +189,7 @@ Lieu.create(
 Lieu.create(
   name:'La Belle Jardinière Chagny',
   phone:'09 53 44 07 30',
-  url:'http://www.booking.com/searchresults.fr.html?aid=318615;label=New_French_FR_FR_21427176985-EGcpj55bgemW1QYsCbqg6QS84604480705%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg;sid=406edfe15953edcb10f46987168687ee;dcid=4;dest_id=-1417704;dest_type=city;highlighted_hotels=594079;hlrd=1;redirected=1;source=hotel&gclid=CjwKEAiA__C1BRDqyJOQ8_Tq230SJABWBSxnrYGNWtQ-77aEG3cP6aUruNfQR_PyZgefHYhkaI0_gRoCBdjw_wcB&'
+  url:'http://www.chambres-hotes.fr/chambres-hotes_chambre-d-hote-de-la-belle-jardiniere_chagny_h420660.htm',
   genre:'hotel',
   city:'Chagny',
   description: 'à 2 km du Château'
@@ -247,7 +247,7 @@ Lieu.create(
 Lieu.create(
   name:'Hôtel le Mont Mélian',
   phone:'03 80 21 64 90',
-  url:"http://www.booking.com/searchresults.fr.html?aid=311089;label=le-mont-ma-c-lian-S_zKhrHTEvXsL1h6tkbJIgS55438646304%3Apl%3Ata%3Ap11%3Ap2812.000%3Aac%3Aap1t1%3Aneg%3Afi%3Atiaud-146342136550%3Akwd-30664540083%3Alp9056135%3Ali%3Adec%3Adm;sid=406edfe15953edcb10f46987168687ee;dcid=12;dest_id=-1451307;dest_type=city;highlighted_hotels=365985;hlrd=1;redirected=1;source=hotel&gclid=CjwKEAiA__C1BRDqyJOQ8_Tq230SJABWBSxnOxFybSx0nArXjKOWJ77UO40VBemvVOXj-lQx7XbPqBoCrMPw_wcB&",
+  url:'http://www.france-hotel-guide.com/fr/17576-hotel-le-mont-melian-meursault-fr.php',
   genre:'hotel',
   city:'Meursault',
   description: 'à 7 km du Château')

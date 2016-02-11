@@ -26,17 +26,17 @@
         <% @lieux.each do |lieu| %>
           <% if lieu.genre == g %>
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <%= link_to(lieu.url, target: :_blank) do %>
-              <div class="card">
-                <div class="card-text">
-                  <p class="title text-center"><strong><%= lieu.name %></strong></p>
-                  <p class="title text-center"><%= lieu.city %></p>
-                  <p class="title text-center"><%= lieu.url %></p>
-                  <p class="title text-center"><%= lieu.phone %></p>
-                  <p class="title text-center"> <strong><%= lieu.description %></strong></p>
+              <a href=<%=lieu.url%> target="_blank">
+                  <div class="card">
+                  <div class="card-text">
+                    <p class="title text-center"><strong><%= lieu.name %></strong></p>
+                    <p class="title text-center"><%= lieu.city %></p>
+                    <p class="title text-center"><%= lieu.url %></p>
+                    <p class="title text-center"><%= lieu.phone %></p>
+                    <p class="title text-center"> <strong><%= lieu.description %></strong></p>
+                  </div>
                 </div>
-              </div>
-              <%end%>
+              </a>
             </div>
           <% end %>
         <% end %>

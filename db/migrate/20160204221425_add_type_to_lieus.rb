@@ -1,4 +1,4 @@
-class AddTypeTolieus < ActiveRecord::Migration
+class AddTypeToLieus < ActiveRecord::Migration
   def change
     add_column :lieus, :genre, :string
     add_column :lieus, :city, :string
