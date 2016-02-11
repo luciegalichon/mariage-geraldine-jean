@@ -17,11 +17,14 @@
   <div class="bg-height-100p bg-pink padding-10">
     <p><strong><%= pluralize covoiturage.reviews.size, "Commentaires" %></strong></p>
         <% if !covoiturage.reviews.blank? %>
-        <div  id="review-<%=id+1%>" style="margin-bottom: 20px;">
-          <% covoiturage.reviews.each_with_index do |review, i| %>
-            <%= render 'reviews/show', review: review, number: i+1, id:i %>
-          <% end %>
-         </div>
+          <div  id="review-<%=id+1%>" style="margin-bottom: 20px;">
+            <% covoiturage.reviews.each_with_index do |review, i| %>
+              <%= render 'reviews/show', review: review, number: i+1, id:i %>
+            <% end %>
+          </div>
+        <%else%>
+          <div  id="review-<%=id+1%>" style="margin-bottom: 20px;">
+          </div>
         <% end %>
        <%= render 'reviews/new', review: @review, covoiturage: covoiturage %>
   </div>
