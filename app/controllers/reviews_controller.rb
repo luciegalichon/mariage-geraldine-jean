@@ -4,8 +4,8 @@ def create
 
     @covoiturage = Covoiturage.find(params[:covoiturage_id])
     @review = Review.new(review_params)
+    @id = @covoiturage.id
     @review.covoiturage = @covoiturage
-    @id=@covoiturage.id-1
     if @review.save
       respond_to do |format|
         format.html { redirect_to covoiturages_path }

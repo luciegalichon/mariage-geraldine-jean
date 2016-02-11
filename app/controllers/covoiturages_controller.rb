@@ -6,7 +6,7 @@ end
 
 def create
     @covoiturage = Covoiturage.new(covoit_params)
-    @id = Covoiturage.all.count
+    @id = @covoiturage.id
     @review = Review.new
 
     if @covoiturage.save
@@ -27,17 +27,19 @@ def index
     @covoiturages = Covoiturage.all
     @review = Review.new
     @covoiturage = Covoiturage.new
+
 end
 
 def show
     @covoiturage = Covoiturage.find(params[:id])
     @review = Review.new
+    @id = @covoiturage.id
 end
 
  private
 
   def covoit_params
-    params.require(:covoiturage).permit(:title, :description, :datea, :dater, :lieudep, :nbplace)
+    params.require(:covoiturage).permit(:title, :name, :description, :datea, :dater, :lieudep, :nbplace)
   end
 
 end

@@ -4,12 +4,11 @@
   // Render new review form with errors
   $('#new_review').html("<%= j render 'reviews/form', covoiturage: @covoiturage, review: @review %>");
 <% else %>
-  // Create a paragraph for the new review. But hide it.
-  var new_review = $("<%= j render 'reviews/show', review: @review %>").hide();
+
+  var new_review = $("<%= j render 'reviews/show', number: @covoiturage.reviews.size, id: @review.id, review: @review %>").hide();
   // Add it to the DOM, at the end of the existing reviews. It's still hidden.
   $('#review-<%=@id%>').append(new_review);
   // Show the new review with an animation!
   new_review.slideDown();
-  // Remove the text from the content textarea.
-  $('#review_content').val('');
+
 <% end %>
