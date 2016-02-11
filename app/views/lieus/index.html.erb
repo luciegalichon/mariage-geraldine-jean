@@ -23,17 +23,17 @@
           <h2 class="text-center padding-20"><%= g.upcase %></h2>
         </div>
 
-        <% @lieux.each do |lieu| %>
-          <% if lieu.genre == g %>
+        <% Lieu.all.each do |l| %>
+          <% if l.genre == g %>
             <div class="col-sm-12 col-md-6 col-lg-4">
-              <a href=<%=lieu.url%> target="_blank">
+              <a href=<%=l.url%> target="_blank">
                   <div class="card">
                   <div class="card-text">
-                    <p class="title text-center"><strong><%= lieu.name %></strong></p>
-                    <p class="title text-center"><%= lieu.city %></p>
-                    <p class="title text-center"><%= lieu.url %></p>
-                    <p class="title text-center"><%= lieu.phone %></p>
-                    <p class="title text-center"> <strong><%= lieu.description %></strong></p>
+                    <p class="title text-center"><strong><%= l.name %></strong></p>
+                    <p class="title text-center"><%= l.city %></p>
+                    <p class="title text-center"><%= l.url %></p>
+                    <p class="title text-center"><%= l.phone %></p>
+                    <p class="title text-center"> <strong><%= l.description %></strong></p>
                   </div>
                 </div>
               </a>

@@ -347,7 +347,7 @@ Lieu.create(
 Lieu.create(
   name:'Hostellerie de Bretonnière',
   phone:'03 80 22 15 77',
-  url:'http://www.hotelbretonniere.com/fr/?gclid=CjwKEAiA__C1BRDqyJOQ8_Tq230SJABWBSxn8Qn-q8mGAQs5xRcsTC3BteyPE6fBIq5i6uEKIU7RHhoC4yPw_wcB',
+  url:'http://www.hotelbretonniere.com/',
   genre:'hotel',
   city:'Beaune',
   description:"43, rue du Faubourg Bretonnière (15 minutes en voiture, 80 à 120€ la chambre double)"
