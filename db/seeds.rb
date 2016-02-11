@@ -1,7 +1,7 @@
 Lieu.create(
   name:'Camping des sources',
   phone:'03 80 20 66 55',
-  url:'www.aquadis-loisirs.com/camping-des-sources/',
+  url:'http://www.aquadis-loisirs.com/camping-des-sources/',
   genre:'camping',
   city:'Santenay',
   description:"Avenue des Sources ( 9 minutes en voiture)"
@@ -247,6 +247,7 @@ Lieu.create(
 Lieu.create(
   name:'Hôtel le Mont Mélian',
   phone:'03 80 21 64 90',
+  url:"http://www.booking.com/searchresults.fr.html?aid=311089;label=le-mont-ma-c-lian-S_zKhrHTEvXsL1h6tkbJIgS55438646304%3Apl%3Ata%3Ap11%3Ap2812.000%3Aac%3Aap1t1%3Aneg%3Afi%3Atiaud-146342136550%3Akwd-30664540083%3Alp9056135%3Ali%3Adec%3Adm;sid=406edfe15953edcb10f46987168687ee;dcid=12;dest_id=-1451307;dest_type=city;highlighted_hotels=365985;hlrd=1;redirected=1;source=hotel&gclid=CjwKEAiA__C1BRDqyJOQ8_Tq230SJABWBSxnOxFybSx0nArXjKOWJ77UO40VBemvVOXj-lQx7XbPqBoCrMPw_wcB&",
   genre:'hotel',
   city:'Meursault',
   description: 'à 7 km du Château')
