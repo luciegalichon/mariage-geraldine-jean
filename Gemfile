@@ -19,6 +19,9 @@ gem "coffee-rails"
 gem "geocoder"
 gem "gmaps4rails"
 
+# pour l'upload d'image
+gem 'cloudinary'
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
