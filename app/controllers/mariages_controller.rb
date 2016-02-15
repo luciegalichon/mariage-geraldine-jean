@@ -11,4 +11,7 @@ class MariagesController < ApplicationController
 
   def lieux
   end
+
+  def liste
+  end
 end
