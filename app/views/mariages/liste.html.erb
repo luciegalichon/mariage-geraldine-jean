@@ -6,7 +6,14 @@
 
     <div class="col-sm-12 padding-bottom-30">
       <h1 class="text-center padding-20"> Liste de mariage </h1>
-      <p class="text-center"> Notre liste de mariage sera bientôt disponible ... </p>
+
+      <%= link_to("http://www.millemercismariage.com/geraldinejean2016/mariage-de-geraldine-lapiche-et-jean-senemaud.html", html_options = { target: :_blank}) do %>
+       <p class="text-center"> Cliquez pour accéder à notre liste de mariage </p>
+        <div>
+        <%= image_tag("gegejean4.jpg", class: "img-responsive img-thumbnail img-rounded")%>
+        </div>
+      <%end%>
+
     </div>
   </div>
 
